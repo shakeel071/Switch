@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="light">
+        <div class="switch">
+            <div class="btn"></div>
+        </div>
+    </div>
+    <audio id="audio" src="nasheed.mp3" autostart="false"></audio>
+    <script>
+        let btn=document.querySelector('.btn');
+        let body=document.querySelector('body');
+        let sound=document.getElementById('audio');
+        btn.onclick=function(){
+            body.classList.toggle('on');
+           if(body.classList.contains('on')){
+            sound.play();
+           }
+           else{
+            sound.pause();
+            sound.currentTime=0;
+           }
+        }
+    </script>
+</body>
+</html>
