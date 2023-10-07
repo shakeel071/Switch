@@ -18,6 +18,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 14px;
     border-left: 0.5px solid rgba(255,255,255,0.5);
     border-top: 0.5px solid rgba(255,255,255,0.5);
     box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
@@ -59,12 +60,13 @@ body{
 @media only screen and (max-width:600px){
     .light{
         position: relative;
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         background: rgba(255,255,255,0.1);
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 14px;
         border-left: 0.5px solid rgba(255,255,255,0.5);
         border-top: 0.5px solid rgba(255,255,255,0.5);
         box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
